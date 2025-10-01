@@ -1,4 +1,4 @@
-# Savana Clothing Brand
+# ZYRA Clothing Brand
 
 A premium clothing brand website inspired by the wild beauty of the savanna.
 
@@ -19,7 +19,7 @@ A premium clothing brand website inspired by the wild beauty of the savanna.
 ## File Structure
 
 ```
-Savana/
+#ZYRA/
 ├── index.html          # Main homepage
 ├── styles/
 │   └── main.css       # Main stylesheet
