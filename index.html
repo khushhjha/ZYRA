@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZYRA - Premium Clothing Brand</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>ZYRA</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#collection">Collection</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="side-image left-image">
+                <img src="images/top2" alt="Fashion Model">
+            </div>
+            <div class="hero-content">
+                <h2>Discover Your Style</h2>
+                <p>Premium clothing for the modern adventurer</p>
+                <div class="ad-image">
+                    <img src="images/haul" alt="zyra haul">
+                    <div class="offer-badge">50% OFF<br><span>Festival Offer</span></div>
+                </div>
+                <button class="cta-button">Shop Now</button>
+            </div>
+            <div class="side-image right-image">
+                <img src="images/formal suit" alt="Fashion Style">
+            </div>
+        </section>
+
+        <section id="collection" class="collection">
+            <h2>Women's Collection</h2>
+            
+            <div class="category-nav">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="tops">Tops</button>
+                <button class="category-btn" data-category="shirts">Shirts</button>
+                <button class="category-btn" data-category="jeans">Jeans</button>
+                <button class="category-btn" data-category="dresses">Dresses</button>
+                <button class="category-btn" data-category="suits">Suits</button>
+                <button class="category-btn" data-category="sarees">Sarees</button>
+                <button class="category-btn" data-category="brassiere">Brassiere</button>
+            </div>
+
+            <div class="product-grid">
+                <div class="product-card" data-category="tops">
+                    <img src="images/top2" alt="Draped crop top" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="product-img" style="background: linear-gradient(45deg, #d4a574, #b8935f); display: none;"><span>Draped Crop Top</span></div>
+                    <h3>Draped Crop Top</h3>
+                    <p>₹2,499</p>
+                    <button class="buy-btn" onclick="openPurchaseModal(1)">Buy Now</button>
+                </div>
+                <div class="product-card" data-category="tops">
+                    <img src="images/top 1" alt="Designer Top" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="product-img" style="background: linear-gradient(45deg, #2c1810, #4a2f1f); display: none;"><span>Designer Top</span></div>
+                    <h3>Designer Top</h3>
+                    <p>₹1,899</p>
+                    <button class="buy-btn" onclick="openPurchaseModal(2)">Buy Now</button>
+                </div>
+                <div class="product-card" data-category="shirts">
+                    <img src="images/shirt image" alt="Casual Shirt" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="product-img" style="background: linear-gradient(45deg, #10b981, #059669); display: none;"><span>Casual Shirt</span></div>
+                    <h3>Casual Shirt</h3>
+                    <p>₹1,599</p>
+                    <button class="buy-btn" onclick="openPurchaseModal(11)">Buy Now</button>
+                </div>
+                <div class="product-card" data-category="shirts">
+                    <img src="images/formal shirt" alt="Formal Shirt" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="product-img" style="background: linear-gradient(45deg, #3b82f6, #1d4ed8); display: none;"><span>Formal Shirt</span></div>
+                    <h3>Formal Shirt</h3>
+                    <p>₹2,199</p>
+                    <button class="buy-btn" onclick="openPurchaseModal(12)">Buy Now</button>
+                </div>
+                <div class="product-card" data-category="jeans">
+                    <img src="images/jeans 1" alt="High Waist Jeans" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="product-img" style="background: linear-gradient(45deg, #4169e1, #1e3a8a); display: none;"><span>High Waist Jeans</span></div>
+                    <h3>High Waist Jeans</h3>
+                    <p>₹3,299</p>
+                    <button class="buy-btn" onclick="openPurchaseModal(3)">Buy Now</button>
+                </div>
+                <div class="product-card" data-category="jeans">
+                    <img src="images/skinny jeans" alt="Skinny Jeans" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="product-img" style="background: linear-gradient(45deg, #1e40af, #1e3a8a); display: none;"><span>Skinny Jeans</span></div>
+                    <h3>Skinny Jeans</h3>
+                    <p>₹2,799</p>
+                    <button class="buy-btn" onclick="openPurchaseModal(4)">Buy Now</button>
+                </div>
+                <div class="product-card" data-category="dresses">
+                    <img src="images/night dress" alt="Night Shorts" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="product-img" style="background: linear-gradient(45deg, #ec4899, #be185d); display: none;"><span>Night Shorts</span></div>
+                    <h3>Night Shorts</h3>
+                    <p>₹4,999</p>
+                    <button class="buy-btn" onclick="openPurchaseModal(5)">Buy Now</button>
+                </div>
+                <div class="product-card" data-category="dresses">
+                    <img src="images/casual dress.avif" alt="Casual Dress" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="product-img" style="background: linear-gradient(45deg, #8b5cf6, #7c3aed); display: none;"><span>Casual Dress</span></div>
+                    <h3>Casual Dress</h3>
+                    <p>₹2,299</p>
+                    <button class="buy-btn" onclick="openPurchaseModal(6)">Buy Now</button>
+                </div>
+                <div class="product-card" data-category="suits">
+                    <img src="images/business suit" alt="Business Suit" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="product-img" style="background: linear-gradient(45deg, #374151, #1f2937); display: none;"><span>Business Suit</span></div>
+                    <h3>Business Suit</h3>
+                    <p>₹8,999</p>
+                    <button class="buy-btn" onclick="openPurchaseModal(7)">Buy Now</button>
+                </div>
+                <div class="product-card" data-category="suits">
+                    <img src="images/formal suit" alt="Formal Suit" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="product-img" style="background: linear-gradient(45deg, #6b7280, #374151); display: none;"><span>Formal Suit</span></div>
+                    <h3>Formal Suit</h3>
+                    <p>₹7,499</p>
+                    <button class="buy-btn" onclick="openPurchaseModal(8)">Buy Now</button>
+                </div>
+                <div class="product-card" data-category="sarees">
+                    <img src="images/silk saree" alt="Silk Saree" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="product-img" style="background: linear-gradient(45deg, #f59e0b, #d97706); display: none;"><span>Silk Saree</span></div>
+                    <h3>Silk Saree</h3>
+                    <p>₹12,999</p>
+                    <button class="buy-btn" onclick="openPurchaseModal(9)">Buy Now</button>
+                </div>
+
+                <div class="product-card" data-category="sarees">
+                    <img src="images/designer saree" alt="Designer Saree" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="product-img" style="background: linear-gradient(45deg, #dc2626, #991b1b); display: none;"><span>Designer Saree</span></div>
+                    <h3>Designer Saree</h3>
+                    <p>₹15,999</p>
+                    <button class="buy-btn" onclick="openPurchaseModal(10)">Buy Now</button>
+                </div>
+                <div class="product-card" data-category="brassiere">
+                    <img src="images/bra 2" alt="Sports Bra" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="product-img" style="background: linear-gradient(45deg, #f97316, #ea580c); display: none;"><span>Sports Bra</span></div>
+                    <h3>Sports Bra</h3>
+                    <p>₹899</p>
+                    <button class="buy-btn" onclick="openPurchaseModal(13)">Buy Now</button>
+                </div>
+                <div class="product-card" data-category="brassiere">
+                    <img src="images/bra 1" alt="Lace Bra" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="product-img" style="background: linear-gradient(45deg, #e879f9, #d946ef); display: none;"><span>Lace Bra</span></div>
+                    <h3>Lace Bra</h3>
+                    <p>₹1,299</p>
+                    <button class="buy-btn" onclick="openPurchaseModal(14)">Buy Now</button>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="about-container">
+                <div class="about-text">
+                    <h2>✨ About ZYRA</h2>
+                    <p class="about-quote">"Fashion is the armor to survive the reality of everyday life"</p>
+                    <p>Born from the wild beauty of the African savanna, our brand represents the perfect fusion of untamed elegance and sophisticated style. We believe every woman deserves to feel confident, beautiful, and empowered through fashion.</p>
+                    <div class="founder-info">
+                        <p class="founder-text">Founded by <strong>KHUSHI JHA</strong>, ZYRA is built on the vision of making premium fashion accessible to every woman who dares to express her unique style.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">10K+</span>
+                            <span class="stat-label">Happy Customers</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Unique Designs</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5★</span>
+                            <span class="stat-label">Customer Rating</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/khushi" alt="About ZYRA">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>💌 Get In Touch</h2>
+                    <p class="contact-subtitle">We'd love to hear from you!</p>
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-icon">📧</div>
+                            <h3>Email Us</h3>
+                            <p>khushijha671@gmail.com</p>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">📱</div>
+                            <h3>Call Us</h3>
+                            <p>+91 8447472354</p>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">📍</div>
+                            <h3>Visit Us</h3>
+                            <p>Delhi, Connaught Place</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ZYRA Clothing Brand. All rights reserved.</p>
+        <p class="founder-credit">Founded by KHUSHI JHA</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="purchase.js"></script>
+</body>
+</html>
